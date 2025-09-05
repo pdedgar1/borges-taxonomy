@@ -2,7 +2,7 @@ const categories = [
     { name: "BELONGING TO THE EMPEROR", key: "emperor" },
     { name: "EMBALMED", key: "embalmed" },
     { name: "TAME", key: "tame" },
-    { name: "SUCKING PIGS", key: "pigs" },
+    { name: "SUCKLING PIGS", key: "pigs" },
     { name: "SIRENS", key: "sirens" },
     { name: "FABULOUS", key: "fabulous" },
     { name: "STRAY DOGS", key: "dogs" },
@@ -17,19 +17,19 @@ const categories = [
 
 const items = [
     // Emperor
-    { emoji: "👑", description: "Royal Crown", category: "emperor" },
-    { emoji: "📜", description: "Imperial Decree", category: "emperor" },
+    { emoji: "👑", description: "Crown", category: "emperor" },
+    { emoji: "📜", description: "Decree", category: "emperor" },
     { emoji: "🏰", description: "Palace", category: "emperor" },
     
     // Embalmed
-    { emoji: "🏺", description: "Ancient Mummy", category: "embalmed" },
+    { emoji: "🧟", description: "Mummified Body", category: "embalmed" },
     { emoji: "🦎", description: "Taxidermied Lizard", category: "embalmed" },
     { emoji: "🌹", description: "Preserved Rose", category: "embalmed" },
     
     // Tame
     { emoji: "🐕", description: "Pet Dog", category: "tame" },
     { emoji: "🐱", description: "House Cat", category: "tame" },
-    { emoji: "🐎", description: "Domesticated Horse", category: "tame" },
+    { emoji: "🐎", description: "Work Horse", category: "tame" },
     
     // Pigs
     { emoji: "🐷", description: "Nursing Piglet", category: "pigs" },
@@ -47,8 +47,8 @@ const items = [
     { emoji: "🔥", description: "Phoenix", category: "fabulous" },
     
     // Dogs
-    { emoji: "🐕‍🦺", description: "Stray Mutt", category: "dogs" },
-    { emoji: "🐺", description: "Feral Dog Pack", category: "dogs" },
+    { emoji: "🐕‍🦺", description: "Lone Mutt", category: "dogs" },
+    { emoji: "🐺", description: "Wolf Pack", category: "dogs" },
     { emoji: "🦮", description: "Lost Pet", category: "dogs" },
     
     // Classification
@@ -57,9 +57,9 @@ const items = [
     { emoji: "📊", description: "Classification Chart", category: "classification" },
     
     // Frenzied
-    { emoji: "🦈", description: "Shark in Feeding Frenzy", category: "frenzied" },
-    { emoji: "🕺", description: "Manic Dancer", category: "frenzied" },
-    { emoji: "🐝", description: "Agitated Swarm", category: "frenzied" },
+    { emoji: "🦈", description: "Feeding Shark", category: "frenzied" },
+    { emoji: "🕺", description: "Ecstatic Dancer", category: "frenzied" },
+    { emoji: "🐝", description: "Hive Swarm", category: "frenzied" },
     
     // Innumerable
     { emoji: "⭐", description: "Stars in the Sky", category: "innumerable" },
@@ -67,7 +67,7 @@ const items = [
     { emoji: "💭", description: "Human Thoughts", category: "innumerable" },
     
     // Brush
-    { emoji: "🎨", description: "Miniature Portrait", category: "brush" },
+    { emoji: "🎨", description: "Ink Portrait", category: "brush" },
     { emoji: "📖", description: "Illuminated Manuscript", category: "brush" },
     { emoji: "🌺", description: "Botanical Illustration", category: "brush" },
     
@@ -77,14 +77,14 @@ const items = [
     { emoji: "♾️", description: "And So On...", category: "etcetera" },
     
     // Pitcher
-    { emoji: "🏺", description: "Clumsy Servant", category: "pitcher" },
+    { emoji: "🤕", description: "Clumsy Servant", category: "pitcher" },
     { emoji: "🐈", description: "Startled Cat", category: "pitcher" },
     { emoji: "⚽", description: "Children Playing Ball", category: "pitcher" },
     
     // Flies
     { emoji: "✈️", description: "Distant Aircraft", category: "flies" },
-    { emoji: "🏢", description: "People from Skyscraper", category: "flies" },
-    { emoji: "🕊️", description: "High Circling Birds", category: "flies" }
+    { emoji: "🦇", description: "Bat Colony", category: "flies" },
+    { emoji: "🕊️", description: "Flock of Birds", category: "flies" }
 ];
 
 let currentItemIndex = 0;
@@ -289,15 +289,15 @@ function checkAnswers() {
     let performanceMessage = '';
     
     if (percentage >= 90) {
-        performanceMessage = '🏆 Exceptional! You have mastered the art of Borgesian taxonomy!';
+        performanceMessage = '🏆 Exceptional! You have mastered the Borgesian taxonomy!';
     } else if (percentage >= 75) {
-        performanceMessage = '🎯 Excellent work! You show great promise as a classifier!';
+        performanceMessage = '🎯 Excellent! You show promise as a classifier!';
     } else if (percentage >= 60) {
         performanceMessage = '👍 Good effort! The absurdity of classification is not lost on you!';
     } else if (percentage >= 40) {
-        performanceMessage = '🤔 A valiant attempt! Perhaps the categories resist logical understanding?';
+        performanceMessage = '🤔 A valiant attempt! Perhaps categories resist understanding?';
     } else {
-        performanceMessage = '🌪️ Wonderfully chaotic! You have embraced the true spirit of Borges!';
+        performanceMessage = '🌪️ Chaotic! You have embraced the spirit of Borges!';
     }
     
     const summaryHTML = `
