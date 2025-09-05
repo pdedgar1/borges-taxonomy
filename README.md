@@ -35,8 +35,8 @@ After Claude made a single-file version of this game, which worked well enough t
 At the end of this process, I was content with the structure as I had it on my machine. I made several tweaks to the language in the display, mostly the user-facing text in various positions in the code (the "check your work" display, the descriptions of the tiles, and the instructions provided to the user at the top of the webpage). 
 
 ^ See the following elements 
-- [Permutational Text Eraser](pdedgar1.github.io/Erasure_Eraser/) - This project will erase every 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, or 9th word as desired by the user (some of these options are stackable).  
-- [Full-Text Abedecary](pdedgar1.github.io/pd-abedecary/) - This project will alphabetize an entire text file and display the text according to a few different rules (grouped or listed, columnar or ruled).
-- [Markov Text Generator](pdedgar1.github.io/pd-writing-bot/) - This project will mashup, reorganize, and generate new text in strings of chosen lengths and amounts given a text file provided by the user (with Javascript, not AI). 
+- [Permutational Text Eraser](https://github.com/pdedgar1/Erasure_Eraser) - This project will erase every 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, or 9th word as desired by the user (some of these options are stackable).  
+- [Full-Text Abedecary](https://github.com/pdedgar1/pd-abedecary) - This project will alphabetize an entire text file and display the text according to a few different rules (grouped or listed, columnar or ruled).
+- [Markov Text Generator](https://github.com/pdedgar1/pd-writing-bot) - This project will mashup, reorganize, and generate new text in strings of chosen lengths and amounts given a text file provided by the user (with Javascript, not AI). 
 
 ^^ For example, one poem of mine asks "What do you do in a crisis?" Rather than tell the user, the poem is structured as a word search with the answers to such a question provided. The player-poet must discover them for themselves the answer to this question and compose a poem with the words discovered either in order of the list or using the found list as a starting point. 
